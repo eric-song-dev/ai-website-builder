@@ -1,0 +1,9 @@
+.git
+.venv
+**/__pycache__
+**/.pytest_cache
+frontend/node_modules
+templates/react-vite/node_modules
+templates/react-vite/dist
+artifacts/*
+deployments/*

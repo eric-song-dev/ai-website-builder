@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "provider": "fake",
+    "embedding": "deterministic-hash-384",
+    "samples": {
+      "assets": 12,
+      "rag": 6,
+      "revisions": 50
+    }
+  },
+  "parallel_assets": {
+    "serial_median_ms": 324.32,
+    "parallel_median_ms": 81.3,
+    "parallel_p95_ms": 81.48,
+    "latency_reduction_percent": 74.9
+  },
+  "rag": {
+    "metric": "top-1 source accuracy",
+    "baseline": 1.0,
+    "optimized_rewrite_rrf": 1.0,
+    "relative_uplift_percent": 0.0
+  },
+  "revision_patch": {
+    "scope": "in-process effective patch; excludes HTTP/SSE/database",
+    "p50_ms": 0.021,
+    "p95_ms": 0.026
+  }
+}
